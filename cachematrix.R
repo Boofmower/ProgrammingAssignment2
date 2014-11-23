@@ -10,7 +10,8 @@
 
 ##=================================================================
 ## **makeCacheMatrix**The function "makeCacheMatrix" creates an 
-## empty matrix defined by "m", and is defined by matrix "x". 
+## empty matrix defined by "m". The function further stores the 
+## inverse of "m" after the original matrix "x" is provided.
 ##=================================================================
 makeCacheMatrix <- function(x = matrix()) {
     m <- NULL
@@ -45,6 +46,10 @@ cacheSolve <- function(x, ...) {
   x$setinverse(m)
   m
 }
+
+##=================================================================
+##-----------------------------END---------------------------------
+##=================================================================
 
 ##=================================================================
 ##-----------------------------END---------------------------------
